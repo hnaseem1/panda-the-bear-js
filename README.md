@@ -65,3 +65,22 @@ Change the value of the submit button on the contact form to "En garde!". ------
 We should stop Koala from sending an email to Panda that they might regret! Find a way to disable the submit button (hint: familiarize yourself with the disabled attribute). ----- Done
 
 We should help Panda protect their privacy by erasing their personal details from the sidebar. -->
+
+
+
+
+PART 2
+
+
+div = document.getElementById('time-travel')
+div.parentNode.removeChild(time)
+
+
+pikachu = document.getElementById('right-image').querySelector('img')
+var pikachuClone = pikachu.cloneNode()
+document.querySelector('.portfolio-container').appendChild(pikachuClone)
+
+
+for(i = 0; i <= 10; i++) {
+  document.querySelector('.portfolio-container').appendChild(pikachuClone)
+}
