@@ -84,3 +84,18 @@ document.querySelector('.portfolio-container').appendChild(pikachuClone)
 for(i = 0; i <= 10; i++) {
   document.querySelector('.portfolio-container').appendChild(pikachuClone)
 }
+
+
+var listItem = document.createElement('li');
+var leftSpan = document.createElement('span');
+var lastUpdated = document.createTextNode('Page last updated on');
+leftSpan.appendChild(lastUpdated);
+listItem.appendChild(leftSpan);
+leftSpan.classList.add("bio-info-title");
+listItem.classList.add('bio-info-item');
+var rightSpan = document.createElement('span');
+var date = document.createTextNode(new Date);
+rightSpan.appendChild(date);
+rightSpan.classList.add("bio-info-title");
+listItem.appendChild(rightSpan);
+document.querySelector('.bio-info').appendChild(listItem);
