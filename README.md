@@ -87,15 +87,27 @@ for(i = 0; i <= 10; i++) {
 
 
 var listItem = document.createElement('li');
+<br>
 var leftSpan = document.createElement('span');
+<br>
 var lastUpdated = document.createTextNode('Page last updated on');
+<br>
 leftSpan.appendChild(lastUpdated);
+<br>
 listItem.appendChild(leftSpan);
+<br>
 leftSpan.classList.add("bio-info-title");
+<br>
 listItem.classList.add('bio-info-item');
+<br>
 var rightSpan = document.createElement('span');
+<br>
 var date = document.createTextNode(new Date);
+<br>
 rightSpan.appendChild(date);
+<br>
 rightSpan.classList.add("bio-info-title");
+<br>
 listItem.appendChild(rightSpan);
+<br>
 document.querySelector('.bio-info').appendChild(listItem);
