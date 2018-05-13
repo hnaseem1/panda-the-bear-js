@@ -77,7 +77,9 @@ div.parentNode.removeChild(time)
 
 
 pikachu = document.getElementById('right-image').querySelector('img')
+<br>
 var pikachuClone = pikachu.cloneNode()
+<br>
 document.querySelector('.portfolio-container').appendChild(pikachuClone)
 
 
